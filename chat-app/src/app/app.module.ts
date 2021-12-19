@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MessageListComponent } from './components/message-list/message-list.component';
 import { MessageComponent } from './components/message-list/message/message.component';
+import { UsersListComponent } from './components/users-list/users-list.component';
+import { UserComponent } from './components/users-list/user/user.component';
 
 
 
@@ -14,7 +16,9 @@ import { MessageComponent } from './components/message-list/message/message.comp
     AppComponent,
     HeaderComponent,
     MessageListComponent,
-    MessageComponent
+    MessageComponent,
+    UsersListComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

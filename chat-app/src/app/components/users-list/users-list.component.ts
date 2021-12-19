@@ -3,11 +3,11 @@ import { Users } from '../mock/users';
 import { UsersService } from '../services/users.service';
 
 @Component({
-  selector: 'app-message-list',
-  templateUrl: './message-list.component.html',
-  styleUrls: ['./message-list.component.scss']
+  selector: 'app-users-list',
+  templateUrl: './users-list.component.html',
+  styleUrls: ['./users-list.component.scss']
 })
-export class MessageListComponent implements OnInit {
+export class UsersListComponent implements OnInit {
 
   users: Users[] = [];
 
@@ -25,9 +25,12 @@ export class MessageListComponent implements OnInit {
   }
 
 
-
-
-
-
-
 }
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+@import "../../../scss/app.variables.scss";
+
+
+
+.app-user-inside{
+        display:flex;
+      align-items:center;
+    .user-image{
+        max-width:50px;
+        margin-right:20px;
+    }
+    .user-detail{
+        h3.user-name{
+            font-size:$f-size-4;
+            margin-bottom:5px;
+            font-weight:500;
+        }
+        p.user-message{
+            font-size:$f-size--2;
+            margin-bottom:0px;
+            color:#CCCCCC;
+        }
+    }
+    .user-status{
+        margin-left:auto;
+        p.status-title{
+            margin-bottom:5px;
+            color:#CCCCCC;
+        }
+        .unread-shape{
+            display:none;
+        }
+    }
+    &.unread-message{
+        .unread-shape{
+            display:block;
+            &:before{
+                content:'';
+                width:14px;
+                height:14px;
+                background-color:#007EF4;
+                position:relative;
+                display:block;
+                border-radius:50%;
+            }
+        }
+    }
+
+}

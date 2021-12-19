@@ -1,0 +1,27 @@
+@import "../../scss/app.variables.scss";
+
+.app-users{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  height: 65vh;
+  padding-bottom:41px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding:0px 20px;
+  h2.title{
+      font-size:$f-size--2;
+      margin:0px 0px 20px 0px;
+  }
+  .app-user{
+        margin: 10px 0px;
+        padding: 10px 0px;
+        border-bottom:1px solid #606060;
+        &:last-child{
+            border-bottom:none;
+            margin-bottom:10px;
+            padding-bottom:0px;
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+<div class="app-user-inside" *ngIf="user">
+    <span class="user-image">
+        <img src="{{ user.profilePhoto }}" alt="">
+    </span>
+    <span class="user-detail">
+        <h3 class="user-name">{{ user.firstName }} {{ user.lastName }}</h3>
+        <p class="user-message">I’m going to San Francisco … </p>
+    </span>
+    <span class="user-status">
+        <p class="status-title">{{ user.lastMessageTime }}</p>
+        <span class="unread-shape"></span>
+    </span>
+</div>

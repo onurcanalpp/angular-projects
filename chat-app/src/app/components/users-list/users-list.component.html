@@ -1,0 +1,11 @@
+
+<div class="app-users">
+  <h2 class="title text-left">Messages</h2>
+
+
+  <div class="users">
+      <div class="app-user unread-message" *ngFor="let user of users">
+          <app-user [user]="user"></app-user>
+      </div>
+  </div>
+</div>
