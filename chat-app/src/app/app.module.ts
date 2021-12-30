@@ -8,6 +8,7 @@ import { MessageListComponent } from './components/message-list/message-list.com
 import { MessageComponent } from './components/message-list/message/message.component';
 import { UsersListComponent } from './components/users-list/users-list.component';
 import { UserComponent } from './components/users-list/user/user.component';
+import { TabListComponent } from './components/tab-list/tab-list.component';
 
 
 
@@ -18,7 +19,8 @@ import { UserComponent } from './components/users-list/user/user.component';
     MessageListComponent,
     MessageComponent,
     UsersListComponent,
-    UserComponent
+    UserComponent,
+    TabListComponent
   ],
   imports: [
     BrowserModule,

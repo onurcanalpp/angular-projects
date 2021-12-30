@@ -37,4 +37,22 @@ export const USERS: Users[] = [
     userStatus: 0,
     lastMessageTime: "Tues"
   },
+  {
+    id: 5,
+    firstName: "Ann",
+    lastName: "Carrol",
+    profilePhoto: "../../../assets/images/avatar/avatar-1.png",
+    age: 24,
+    userStatus: 0,
+    lastMessageTime: "Tues"
+  },
+  {
+    id: 6,
+    firstName: "Ann",
+    lastName: "Carrol",
+    profilePhoto: "../../../assets/images/avatar/avatar-2.png",
+    age: 24,
+    userStatus: 0,
+    lastMessageTime: "Tues"
+  },
 ]

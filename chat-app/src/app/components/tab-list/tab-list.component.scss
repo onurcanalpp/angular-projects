@@ -1,0 +1,23 @@
+.app-tabs{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    background:#1f1f1f;
+    text-align:center;
+    height:12vh;
+    .home-tab-list{
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:0px;
+        list-style:none;
+        li{
+            padding: 20px 34px;
+            color: #878787;
+            font-size: 28px;
+            &.active{
+                color:#007EF4;
+            }
+        }
+    }
+}
