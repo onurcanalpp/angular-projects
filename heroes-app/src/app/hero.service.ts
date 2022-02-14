@@ -2,7 +2,12 @@ import { Injectable } from '@angular/core';
 import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
 import { Observable, of } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 import { MessageService } from './message.service';
+import { HttpClient } from '@angular/common/http';
+
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +26,6 @@ export class HeroService {
     this.MessageService.add(`HeroService: fetched hero id=${id}`);
     return of(hero);
   }
-  constructor(private MessageService: MessageService) { }
+  constructor(private MessageService: MessageService,
+    private http: HttpClient) { }
 }
