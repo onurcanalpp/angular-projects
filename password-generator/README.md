@@ -2,9 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
+#Some Images From Project
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![password-generator-1](https://user-images.githubusercontent.com/59441136/154292519-8cab3bf8-a429-46bf-a12e-5e411332f1d7.jpg)
+![password-generator-2](https://user-images.githubusercontent.com/59441136/154292553-518f4bcd-ecd6-4d65-81d2-2a9c710e3201.jpg)
 
 ## Code scaffolding
 
