@@ -1,0 +1,63 @@
+<!-- <div class="password-generator-box">
+    <div class="form-part">
+        <h1>Password Generator</h1>
+        <div class="form-inp">
+            <label>Password Length</label>
+            <input type="text" placeholder="Password Length" (change)="modifyLength($event.target.value)">
+        </div>
+        <div class="form-inp">
+            <label> Use the Alphabet </label>
+            <input type="checkbox" (change)="modifyLetters()">
+        </div>
+        <div class="form-inp">
+            <label> Use the Numbers </label>
+            <input type="checkbox" (change)="modifyNumbers()">
+        </div>
+        <div class="form-inp">
+            <label> Use The Symbols </label>
+            <input type="checkbox" (change)="modifySymbols()">
+        </div>
+        <div class="form-inp">
+            <button [disabled]="!(passwordLength && (includeLetters || includeNumbers || includeSymbols))" (click)="createPassword()">Create Password</button>
+        </div>
+    </div>
+
+    <div class="result">
+        <label> New Created Password </label>
+        <input type="text" [value]="generatedPassword">
+    </div>
+</div> -->
+<div class="password-container">
+    <div class="password-generator-box">
+        <h1>Password Generator</h1>
+        <form [formGroup]="options">
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <mat-label>Password Length</mat-label>
+                    <input matInput type="text" placeholder="Password Length" (change)="modifyLength($event.target.value)">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-checkbox (change)="modifyLetters()">Use The Alphabet</mat-checkbox>
+            </div>
+            <div class="form-group">
+                <mat-checkbox (change)="modifyNumbers()">Use The Numbers</mat-checkbox>
+            </div>
+            <div class="form-group">
+                <mat-checkbox (change)="modifySymbols()">Use The Symbols</mat-checkbox>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <mat-label>Generated Password</mat-label>
+                    <input matInput type="text" [value]="generatedPassword">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <button mat-raised-button [disabled]="!(passwordLength && (includeLetters || includeNumbers || includeSymbols))" (click)="createPassword()">Create New Password</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
