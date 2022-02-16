@@ -53,7 +53,7 @@
                     <input matInput type="text" [value]="generatedPassword">
                 </mat-form-field>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="text-align:center">
                 <button mat-raised-button [disabled]="!(passwordLength && (includeLetters || includeNumbers || includeSymbols))" (click)="createPassword()">Create New Password</button>
             </div>
         </form>
