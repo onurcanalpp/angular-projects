@@ -1,0 +1,16 @@
+<h1>Simple Data Form Example</h1>
+
+<form action="" #simpleForm="ngForm" (ngSubmit)="getSimpleFormValues(simpleForm.value)">
+  <input type="text" name="user" ngModel placeholder="Username">
+  <br> <br>
+  <input type="text" name="age" ngModel placeholder="Age">
+  <br> <br>
+  <input type="text" name="address" ngModel placeholder="Address">
+  <br> <br>
+  <input type="password" name="password" ngModel placeholder="Password">
+  <br> <br>
+  <button>
+    Get User Values
+  </button>
+
+</form>

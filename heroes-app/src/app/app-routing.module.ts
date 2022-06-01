@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { FormExampleComponent } from './form-example/form-example.component';
 
 
 
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'form-example',
+    component: FormExampleComponent
   }
 ];
 
