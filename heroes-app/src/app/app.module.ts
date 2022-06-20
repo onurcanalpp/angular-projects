@@ -10,6 +10,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FormExampleComponent } from './form-example/form-example.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    FormExampleComponent
   ],
   imports: [
     BrowserModule,
