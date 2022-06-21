@@ -8,6 +8,7 @@ import { ListItemComponent } from './components/list-item/list-item.component';
 import { ChildComponent } from './components/child/child.component';
 import { EventsComponent } from './components/events/events.component';
 import { FormsModule } from '@angular/forms';
+import { RxjsExamplesComponent } from './components/rxjs-examples/rxjs-examples.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     ProductComponent,
     ListItemComponent,
     ChildComponent,
-    EventsComponent
+    EventsComponent,
+    RxjsExamplesComponent
   ],
   imports: [
     BrowserModule,
